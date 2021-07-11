@@ -17,6 +17,7 @@ class _LoginPageState extends State<LoginPage> {
 
   final TextEditingController _emailTextController = TextEditingController();
   final TextEditingController _passwordTextController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Material(

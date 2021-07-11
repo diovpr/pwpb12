@@ -41,7 +41,7 @@ class GetStarted extends StatelessWidget {
 
 
 
-              }, icon: Icon(Icons.login_rounded), label:
+              }, icon: Icon(Icons.login_sharp), label:
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text("Sign In To get Started"),

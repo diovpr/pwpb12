@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import 'input_decoration.dart';
@@ -60,6 +61,9 @@ class LoginForm extends StatelessWidget {
                     )
                 ), onPressed: () {
                   if (_formKey.currentState!.validate())
+                  {
+                    FirebaseAuth.instance.signInWithEmailAndPassword(email: _emailTextController.text, password: _passwordTextController.text).then((value) => print(value.user!.email));
+                  }
 {}
             }, child: Text('sign in')),
 
